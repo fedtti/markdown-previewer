@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
+const babel = require("gulp-babel");
 
 gulp.task("styles", () => {
   return gulp.src("./assets/scss/*.scss")
