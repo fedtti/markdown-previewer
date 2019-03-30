@@ -28,7 +28,7 @@ body main section #editor {
   padding: 1rem;
   resize: none;
 }
-body main section #editor::-webkit-input-placeholder, body main section #editor:-ms-input-placeholder, body main section #editor::-moz-placeholder, body main section #editor:-moz-placeholder, body main section #editor::placeholder {
+body main section #editor::placeholder {
   color: rgba(0, 0, 0, 0.75);
 }
 body main section #preview {
@@ -58,6 +58,17 @@ body main section #preview p, body main section #preview li {
 }
 body main section #preview p {
   margin: 1rem 0;
+}
+body main section #preview p a {
+  color: #0d47a1;
+  text-decoration: none;
+  transition: color 0.25s linear;
+}
+body main section #preview p a:visited {
+  color: #4a148c;
+}
+body main section #preview p a:active {
+  color: #b71c1c;
 }
 body main section #preview p code {
   font-family: "Source Code Pro", monospace;

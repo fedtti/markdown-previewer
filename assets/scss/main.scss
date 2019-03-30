@@ -73,7 +73,17 @@ body {
           margin: 1rem 0;
 
           a {
+            color: #0d47a1;
+            text-decoration: none;
+            transition: color 0.25s linear;
 
+            &:visited {
+              color: #4a148c;
+            }
+
+            &:active {
+              color: #b71c1c;
+            }
           }
 
           code {
