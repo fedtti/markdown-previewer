@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,700|Source+Serif+Pro:400,400i,700");
+
+$black: #000;
+$white: #fff;
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background: $black;
+  color: $white;
+  font: 400 1rem/1 "Source Sans Pro", sans-serif;
+  overflow-y: hidden;
+
+  main {
+    display: grid;
+
+    section {
+      height: 50vh;
+      width: 100%;
+
+      #editor, #preview {
+        height: calc(100% - 2rem);
+        overflow-y: scroll;
+        width: calc(100% - 2rem);
+      }
+
+      #editor {
+        border: 0;
+        font-family: "Source Code Pro", monospace;
+        line-height: 1.5;
+        padding: 1rem;
+        resize: none;
+
+        &::placeholder {
+          color: rgba($black, 0.75);
+        }
+      }
+
+      #preview {
+        padding: 1rem;
+
+        h1 {
+          margin: 0;
+        }
+
+        p {
+
+        }
+      }
+    }
+  }
+
+  footer {
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      line-height: 1.5;
+      margin: 0;
+      padding: 1rem;
+      text-transform: uppercase;
+
+      small {
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+@media(min-width: 768px) {
+  body {
+    main {
+      grid-template-columns: 1fr 1fr;
+
+      section {
+        height: 100vh;
+        width: 50vw;
+      }
+    }
+  }
+}

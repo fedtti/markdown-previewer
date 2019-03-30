@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, width=device-width, shrink-to-fit=no">
+    <link rel="prefetch stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Markdown Previewer</title>
+  </head>
+  <body>
+    <main tabindex="-1">
+      <section>
+        <h3 class="hide">Editor</h3>
+        <textarea id="editor" placeholder="# Markdown Previewer
+## A freeCodeCamp Project
+
+Please, enter your own text here to see changes.
+
+It supports [links](#preview), inline `code`, **bold** or _italic_.
+
+You may want to add highlighted quotes, too:
+
+> _Software is like sex: it’s better when it’s free._
+> — **Linus Torvalds**
+
+Experiment with lists, as well…
+
+* uno
+* due
+* tre
+
+What about code blocks?
+
+    if () {
+
+    }
+
+Last, but not least, images.
+
+![GitHub Logo](assets/img/github.png)"></textarea>
+      </section>
+      <section>
+        <h3 class="hide">Preview</h3>
+        <div id="preview"></div>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.6.1/marked.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
