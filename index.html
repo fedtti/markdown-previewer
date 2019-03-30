@@ -11,6 +11,10 @@
   <body>
     <main tabindex="-1">
       <section>
+        <h3 class="hide">Preview</h3>
+        <div id="preview"></div>
+      </section>
+      <section>
         <h3 class="hide">Editor</h3>
         <textarea id="editor" placeholder="# Markdown Previewer
 ## A freeCodeCamp Project
@@ -26,23 +30,19 @@ You may want to add highlighted quotes, too:
 
 Experiment with lists, as well…
 
-* uno
-* due
-* tre
+* this
+* is
+* a list
 
 What about code blocks?
 
-    if () {
-
+    if (foo) {
+      return bar;
     }
 
-Last, but not least, images.
+Last – but not least – images!
 
 ![GitHub Logo](assets/img/github.png)"></textarea>
-      </section>
-      <section>
-        <h3 class="hide">Preview</h3>
-        <div id="preview"></div>
       </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

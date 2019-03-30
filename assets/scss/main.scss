@@ -41,12 +41,67 @@ body {
       #preview {
         padding: 1rem;
 
+        h1, h2 {
+          text-transform: uppercase;
+        }
+
+        h1, strong {
+          font-weight: 700;
+        }
+
         h1 {
+          font-size: 1.5rem;
           margin: 0;
         }
 
-        p {
+        h2, p, li, pre {
+          line-height: 1.5;
+        }
 
+        h2 {
+          color: rgba($white, 0.75);
+          font-size: 0.85rem;
+          font-weight: 400;
+          margin: 0;
+        }
+
+        p, li {
+          font-family: "Source Serif Pro", serif;
+        }
+
+        p {
+          margin: 1rem 0;
+
+          a {
+
+          }
+
+          code {
+            font-family: "Source Code Pro", monospace;
+            font-size: 100%;
+          }
+
+          em {
+            font-style: italic;
+          }
+        }
+
+        blockquote, pre {
+          margin: 1rem;
+        }
+
+        ul {
+          padding: 0 0 0 1rem;
+
+          li {
+            list-style: square;
+          }
+        }
+
+        pre {
+          code {
+            font-family: "Source Code Pro", monospace;
+          }
         }
       }
     }

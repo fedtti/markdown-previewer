@@ -28,14 +28,55 @@ body main section #editor {
   padding: 1rem;
   resize: none;
 }
-body main section #editor::placeholder {
+body main section #editor::-webkit-input-placeholder, body main section #editor:-ms-input-placeholder, body main section #editor::-moz-placeholder, body main section #editor:-moz-placeholder, body main section #editor::placeholder {
   color: rgba(0, 0, 0, 0.75);
 }
 body main section #preview {
   padding: 1rem;
 }
+body main section #preview h1, body main section #preview h2 {
+  text-transform: uppercase;
+}
+body main section #preview h1, body main section #preview strong {
+  font-weight: 700;
+}
 body main section #preview h1 {
+  font-size: 1.5rem;
   margin: 0;
+}
+body main section #preview h2, body main section #preview p, body main section #preview li, body main section #preview pre {
+  line-height: 1.5;
+}
+body main section #preview h2 {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin: 0;
+}
+body main section #preview p, body main section #preview li {
+  font-family: "Source Serif Pro", serif;
+}
+body main section #preview p {
+  margin: 1rem 0;
+}
+body main section #preview p code {
+  font-family: "Source Code Pro", monospace;
+  font-size: 100%;
+}
+body main section #preview p em {
+  font-style: italic;
+}
+body main section #preview blockquote, body main section #preview pre {
+  margin: 1rem;
+}
+body main section #preview ul {
+  padding: 0 0 0 1rem;
+}
+body main section #preview ul li {
+  list-style: square;
+}
+body main section #preview pre code {
+  font-family: "Source Code Pro", monospace;
 }
 body footer {
   margin: 0 auto;
