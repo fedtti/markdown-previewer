@@ -1,0 +1,32 @@
+{
+  "name": "markdown-previewer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "gulp": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedtti/markdown-previewer.git"
+  },
+  "author": "Federico Moretti <hello@federicomoretti.it> (https://federicomoretti.it/)",
+  "license": "MIT",
+  "keywords": [
+    "html",
+    "css",
+    "scss",
+    "javascript",
+    "jquery",
+    "marked"
+  ],
+  "bugs": {
+    "url": "https://github.com/fedtti/markdown-previewer/issues"
+  },
+  "homepage": "https://codepen.io/fedtti/full/xeKymZ"
+}
