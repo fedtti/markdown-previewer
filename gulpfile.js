@@ -20,6 +20,4 @@ gulp.task("styles", () => {
     .pipe(gulp.dest("./assets/css/"));
 });
 
-gulp.task("default", () => {
-
-});
+gulp.task("default", ["scripts", "styles"]);
